@@ -1,0 +1,227 @@
+
+*{
+    font-family: 'Nunito Sans', sans-serif;  
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --color-dorado:#f0ce6c;
+    --color-negro:#111;
+    --color-blanco:#fff;
+}
+.nav__logo-container {
+    background-color: var(--color-blanco);
+}
+.nav__ul {
+    display: flex;
+    flex-direction: column;
+}
+.nav__li-logo img{
+    height: 70px;
+    
+}
+.nav__li-logo {
+    text-align: center;
+    padding: 5px 0;
+}
+.nav__li {
+    background-color: #111;
+    text-align: center;
+    padding: 1rem 2rem;
+    list-style: none;
+}
+.nav__li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav__li a:hover {
+    color: var(--color-dorado);
+    border-bottom: 2px solid var(--color-dorado);
+}
+
+#container__title-first {
+    background-image: url("https://s2.best-wallpaper.net/wallpaper/1920x1200/1906/Pink-tulips-flowers-field-windmill-dusk_1920x1200.jpg");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-blanco);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frase-first {
+    padding: 0 20px;
+}
+
+#perfume__container {
+    background-color: var(--color-blanco);
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#productos {
+    padding-bottom: 20px;
+}
+.title-perfume {
+    padding: 0 20px;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfume {
+    padding: 0 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.38),
+        rgba(0,0,0,0.38)
+    ), url("https://media.glamour.es/photos/616f6e5e8acf211ccf4f959e/master/w_1600,c_limit/739656.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-blanco);
+    height: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__title-second {
+    text-align: center;
+    padding: 50px 0;
+}
+.container__cartas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: solid 1px #ececef;
+    border-radius: 5px;
+    max-width: 400px;
+}
+.carta:hover {
+    box-shadow: 0 0 8px 0 rgb(74 74 74 / 22%);
+}
+.img {
+    margin: 0 15px;
+    margin-top: 30px;
+    max-height: 475px;
+}
+.cartatitulo__container {
+    display: flex;
+    align-content: center;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.cartatitulo__container-img {
+    height: 1.5em;
+}
+.name {
+    padding: 0 5px;
+    padding-top: 9px;
+}
+
+.link {
+    color: var(--color-dorado);
+    text-decoration: none;
+    width: 100px;
+    width:95%;  
+    border:1px solid #ececef;
+    color: var(--color-dorado);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5em;
+    transition:background-color 1.3s;
+    background-color: inherit;
+}
+.link:hover {
+background-color: #fcfaaf;
+}
+
+.precio-container {
+    display: flex;
+    padding-bottom: 1rem;
+}
+.precio-pociento {
+    margin-right: 25px;
+    border-radius: 5px;
+    border: 1px solid var(--color-dorado);
+    background-color: #fcfada;
+    color: var(--color-dorado);
+}
+.precio-viejo {
+    padding-right: 25px;
+}
+#footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-negro );
+    padding: 20px 0;
+}
+.footer-logo {
+    height: 80px;
+    margin-bottom: 2rem;
+}
+.social-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.social-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    margin: 0 1.7rem 1.7rem;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+.ig {
+    background-image: url("img/instagram-logo-white-logo-instagram-putih-975168.png");
+}
+.fk {
+    background-image: url("img/white-facebook-icon-744255.png");
+}
+.tt {
+    background-image: url("img/twitter-logo-black-1673879.png");
+}
+
+@media screen and (min-width:720px) {
+    .nav__ul {
+        flex-direction: row;
+        justify-content: center;
+        background-color: #111;
+    }
+    .nav__li {
+        margin: 0 20px;
+    }
+    .nav__container {
+        position: fixed;
+        width: 100%;;
+        top: 0;
+    }
+    .container__cartas {
+        flex-direction: row;
+    }
+    #container__title-first {
+        margin-top: 135px;
+    }
+}
